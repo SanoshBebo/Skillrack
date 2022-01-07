@@ -1,0 +1,20 @@
+reverse only vowels
+input= hello
+output=holle
+
+s=list(input().strip())
+l,m=[],[]
+k,n=0,0
+for i in s:
+    if i in 'aeiouAEIOU':
+        l.append(i)
+    else:
+        m.append(i)
+l=l[::-1]
+for i in s:
+    if i in 'aeiouAEIOU':
+        print(l[k],end="")
+        k+=1
+    else:
+        print(m[n],end="")
+        n+=1
